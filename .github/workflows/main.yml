@@ -25,7 +25,7 @@ jobs:
         npm install
         npm install -g @angular/cli
         npm install -g copyfiles
-        npm run build-prod -- --output-path=${{ github.workspace }}/dist
+        ng build --prod -- --output-path=${{ github.workspace }}/dist
 
     - name: Remove Angular Build Files
       run: find . -type d -name 'node_modules*' -exec rm -rf {} +
