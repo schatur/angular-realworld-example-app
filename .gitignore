@@ -33,6 +33,9 @@
 npm-debug.log
 testem.log
 /typings
+
+node_modules
+.env
 yarn-error.log
 
 # e2e
